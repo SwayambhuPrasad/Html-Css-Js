@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+a{
+    color: black;
+    font-size: 1em;
+}
+body{
+    background-color: rgb(241, 238, 234);
+    background-image: linear-gradient(
+        to bottom,
+        #f9f4ed 0%,
+        #f9f4ed 10%,
+        #faebd7 10%,
+        #faebd7 20%,
+        #ecca9e 20%,
+        #ecca9e 30%,
+        #f0bc78 30%,
+        #f0bc78 40%,
+        #ed9c34 40%,
+        #ed9c34 50%,
+        #f58f0a 50%,
+        #f58f0a 60%,
+        #f17019 60%,
+        #f17019 75%,
+        #ef4620 75%,
+        #ef4620 90%,
+        #f43105 90%,
+        #f43105 100%
+    );
+    background-repeat: no-repeat ;
+    display: flex;
+    justify-content: center;
+    font-family: 'Muli', sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+nav{
+background-color: #f0d097 ;
+padding: 20px;
+display: flex;
+margin: 10px;
+align-items: center;
+justify-content: center;
+width: 70px;
+height: 60px;
+border-radius: 3px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+transition: width 0.6s linear;
+overflow-x: hidden;
+}
+nav.navActive{
+    width: 350px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    transition: width 0.6s linear;
+}
+
+nav.navActive ul{
+    width: 100%;
+}
+nav ul li{
+  
+    transform: rotateY(360deg);
+    opacity: 0; 
+  
+    transition:transform 0.6s linear, opacity 0.6s linear, display 0.6 ;
+     
+}
+nav.navActive ul li {
+  opacity: 1;
+  transform: rotateY(360deg);
+}
+nav ul a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+.icon{
+background-color: #f0d097;
+border: 0;
+cursor: pointer;
+padding: 5px;
+position: relative;
+top: 0px;
+height: 30px;
+width: 60px;
+
+}
+.icon:focus {
+    outline: 0;
+  }
+.icon .line {
+    background-color: #5290f9;
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transition: transform 0.6s linear;
+  }
+.icon .line2 {
+    top: auto;
+    bottom: 10px;
+  }
+
+nav.navActive .icon .line1 {
+    transform: rotate(-765deg) translateY(5.5px);
+  }
+  
+nav.navActive .icon .line2 {
+    transform: rotate(765deg) translateY(-5.5px);
+  }
+  
