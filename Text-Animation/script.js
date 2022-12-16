@@ -1,6 +1,6 @@
 const texth1 = document.getElementById('text')
 const speedEle = document.getElementById('speed')
-const text = 'i love Ani...';
+const text = 'ajsc sajdbcjk jsabdc...';
 let index = 0;
 let speed = 300 / speedEle.value;
 
