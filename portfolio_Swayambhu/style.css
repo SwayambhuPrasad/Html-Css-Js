@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+body{
+
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+nav{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 100vw;
+    height: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav a:hover {
+    opacity: .5;
+}
+.about{
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    margin-left: 2vmin;
+    margin-top: 4vmin;
+}
+.about #line{
+    background-color: white;
+    height: 0vh;
+    margin-top: 10vmin;
+    width: 2px;
+    opacity: .3;
+}
+.about #form{ 
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vmin;
+    height: 100vh;
+    width: 48vw;
+}
+.about p{
+    margin-top: 10vmin;
+    width: 48vw;
+    text-align:justify;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input{
+    width: 20vmin;
+    height: 3vmin;
+    margin: 1vmin;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+    background-color: dimgrey;
+    border: 0;
+    opacity: .7;
+    border-radius: 5px;
+}
+textarea{
+    width: 40vmin;
+    margin: 1vmin;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+    background-color: dimgrey;
+    border: 0;
+    opacity: .7;
+    border-radius: 5px;
+
+}
+button{
+    width: 7vmin;
+    margin: 1vmin;
+    border: 0;
+    border-radius: 5px;
+    color: azure;
+    background-color: #4c2885;
+}
+#contact-body{
+    background-image:url("/portfolio_Swayambhu/Untitled.png");
+}
